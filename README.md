@@ -12,7 +12,17 @@ For this project we were given access to every student's math and reading scores
 One imnportant aspect of this analysis that had to be taken into consideration was that the math and reading scores for 9th grade students at Thomas High School had to be considered invalid due to apparent academic dishonesty.  This meant that the math and reading scores for 9th grade students at Thomas High School were not included in the school district analysis.
 
 ## Results
-The school district analysis was first conducted using all of the student data and then analyzed again without the math and reading scores for 9th grade students at Thomas High School.  When we compare the results from both sets of data we can observe how the absence of the 9th grade math and reading scores from Thomas High School affect the overall data.  In the original analysis, Thomas High School ranked second out of all the schools in overall passing percentage with 90.9%.  When we run the analysis again without the Thomas High School 9th grade data, we see that the overall passing percentage dropped slightly to 90.6% but this did not change their overall ranking of second.
+The school district analysis was first conducted using all of the student data and then analyzed again without the math and reading scores for 9th grade students at Thomas High School.  When we compare the results from both sets of data we can observe how the absence of the 9th grade math and reading scores from Thomas High School affect the overall data.  
+
+The first place we see an affect on the data is in our district summary dataframe.  When we view the district summary charts with and without Thomas High School 9th grade math and reading scores we can see that average math scores, percentage of students passing math, percentage of students passing reading, and overall percentage of students passing are all slightly lower without the data for Thomas High School 9th graders.  
+![District Summary](Resources/district_summary.PNG) 
+![District Summary -THS 9th](Resources/district_summary_noTHSninth.PNG)
+
+When we examine the school summary dataframe, we can again see that removing the Thomas High School 9th grade math and reading scores has an affect on the data.  Looking specifically at Thomas High School, we see that the without the math and reading scores for 9th grade students, the average math score, percentage of students passing math, percentage of students passing reading, and overall student passing percentage were all lower comparitively.  Interestingly, when we remove the 9th grade reading scores from the analysis we see that the average reading scores for Thomas High School students is actually higher.
+![School Summary](Resources/school_summary.PNG) 
+![School Summary -THS 9th](Resources/school_summary_noTHSninth.PNG)
+
+In the original analysis, Thomas High School ranked second out of all the schools in overall passing percentage with 90.9%.  When we run the analysis again without the Thomas High School 9th grade data, we see that the overall passing percentage dropped slightly to 90.6% but this did not change their overall ranking of second.
 ![Top 5](Resources/top_5_schools.PNG) 
 ![Top 5 -THS 9th](Resources/top_5_noTHSninth.PNG)
 
@@ -30,5 +40,6 @@ Finally, for the purposes of our analysis in regards to the scores by school typ
 
 ## Summary
 We compared the data with and without the math and reading scores for Thomas High School 9th graders in regards to scores by grade, school spending, school size and school type and the results of that comparison are not particularly compelling.  While we do observe a slight variation in the data when compared side-by-side, the affect of not including the math and reading scores from Thomas High School 9th graders on the overall data was insignificant.  Because the overall affect on the data was so minimal, we can infer that the reason that removing the math and reading scores for Thomas High School 9th graders from our analysis was insignificant is because the scores of the 9th graders at Thomas High School was relatively consistent with the scores from the 10th-12th graders at Thomas High School.  This inference is supported by the data when we analyze the math and reading scores respectively by grade for each school.
-![Math Scores by Grade](Resources/math_scores_by_grade.PNG) 
+
+![Math Scores by Grade](Resources/math_scores_by_grade.PNG)
 ![Reading Scores by Grade](Resources/reading_scores_by_grade.PNG)
